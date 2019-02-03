@@ -1,0 +1,105 @@
+.content{
+    background:'../assets/chupete.jpg';
+    display: flex;
+}
+
+.img-M{
+    //width: 30%;
+    text-align: center;
+    justify-content: center;
+    //padding-left: 250px;
+    display: flex;
+}
+.imgInicio{
+    height: auto;
+    width: 40%;
+}
+#img{
+    width: 100%;    
+}
+.pie-imagen{
+    color: #FF1493;
+    font-size: 2.2vw;
+    background-color:white;
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .img-M{
+       // padding-left: 0px;
+    }
+    #img{
+        width: 100%;
+    }
+}
+
+.mainbox{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box{
+    color: white;
+    border: 1px solid #afcde3;
+    padding: 5px;
+    width: 40%;
+    height: auto;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.boxes{
+    /*margin: 0 0 25px;
+    overflow: hidden;*/
+    //position: relative;
+    padding: 5px;
+    margin: 3px;
+    display: flex;
+    //flex-wrap: wrap;
+    width: 100%;
+}
+    
+    
+    @media screen and (max-width: 400px) {
+        .box{
+            display: block;
+            width: 95%;
+        }
+    }
+    .box h4{
+    text-align:left;
+    padding-left: 10px;
+    margin-bottom: 1px;
+    }
+    .box p{
+      color: black;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    }
+    .box a{
+      //position: absolute;
+      bottom: 0;
+      //padding-bottom: 7px;
+    }
+    
+    .box1{
+      background-color: deepSkyBlue;
+    }
+    .box2{
+      background-color: lightPink;
+    }
+    .box3{
+      background-color: mediumSeaGreen;
+    }
+    .box4{
+      background-color: crimson;
+    }
+    
+     
+    .box a:link {
+      color: blue;
+    }
+    .box a:visited {
+      color: purple; 
+    }

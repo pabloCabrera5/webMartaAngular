@@ -1,0 +1,70 @@
+.ticket{
+	border: 1px solid #009900;
+	border-radius: 25px;
+	height: auto;
+	width: 95%;
+	background-color: #009900;
+	padding: 10px;
+	margin: 10px;
+	
+}
+.title{
+	font-size:72px;
+	color: white;
+	margin-left: 5px;
+}
+.subtitle{
+	font-size: 25px;
+	line-height:1.4em;
+	color: #FF8282;
+	margin-left: 5px;
+}
+
+
+.detalle{
+	padding: 7px;
+	margin: 7px;
+	background: white;
+}
+.parrafo{
+	font: normal normal normal 15px/1.4em Signika,sans-serif;
+    color: #717070;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.practicas{
+	padding: 7px;
+	margin: 7px;
+}
+.title1{
+	color: #00cc66;
+	font: normal normal normal 23px/1.4em Signika,sans-serif;
+}
+
+
+.frances{
+	padding: 7px;
+	margin: 7px;
+	margin-bottom: 12px;
+}
+.title2{
+	color: #0099cc;
+	font: normal normal normal 23px/1.4em Signika,sans-serif;
+}
+
+.psicomotricidad{
+	padding: 7px;
+	margin: 7px;
+}
+.title3{
+	color: #ff4d4d;
+	font: normal normal normal 23px/1.4em Signika,sans-serif;
+}
+
+.pequeña {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

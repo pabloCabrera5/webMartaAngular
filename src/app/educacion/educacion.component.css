@@ -1,0 +1,87 @@
+
+.content{
+    background-color: white;
+}
+
+.title > h3{
+	font-family: "Times New Roman", Times, serif;
+	font-variant: small-caps;
+	color: green;
+	font-size: 3.5vw;
+}
+img{
+    max-width: 100%;
+}
+.montessori{
+    display: flex;
+}
+.contentMontessori > h4{
+	color: #FF1493;
+	font-size: 2.2vw;
+}
+.contentMontessori > p {
+	margin-top: 3px;
+	font-size: 1.5vw;
+
+}
+.contentMontessori > a {
+	margin-top: 3px;
+    font-size: 1.5vw;
+    font-family: sacramento,cursive;
+}
+
+.metodoMontessori{
+
+}
+.metodoMontessori p {
+    font-size: 2.0em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #BE004F;
+    font-style: italic;
+    font-family: georgia,palatino,book antiqua,palatino linotype,serif;
+}
+.metodoMontessori ul li{
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    font-family: georgia,palatino,book antiqua,palatino linotype,serif;
+    font-style: italic;
+    letter-spacing: 0.11em;
+}
+
+
+.section{
+    display: flex;
+}
+
+.section1 p {
+    color: #FF8282;
+    font-family: lucida console,lucida-console-w01,monospace;
+    font-size: 1.5em;
+}
+
+.section2 p {
+    color: #759E7C;
+    font-family:georgia,palatino,book antiqua,palatino linotype,serif;
+    font-size: 1.5em;
+}
+
+.section3 p {
+    font-weight:bold;
+    color: #77B8DB;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: georgia,palatino,book antiqua,palatino linotype,serif;
+}
+#text1{
+    font-weight:bold;
+    color: #FF8282;
+    font-family: droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif;
+    font-size: 1.6em;
+}
+#text2{
+    font-weight:bold;
+    font-family: din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    color: #006C6D;
+    font-size: 1.5em;
+}

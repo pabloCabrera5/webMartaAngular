@@ -1,0 +1,89 @@
+
+
+<div class="container" [hidden]=submitted>
+
+  <h1>Contacto</h1>
+  <div style="border: 4px solid lightskyblue; width: 25%"></div>
+  <br><p>
+    Email: marta.perez.95@gmail.com<br>
+    Tel : 648653549
+  </p>
+<br>
+  <form class='form' (ngSubmit)="onSubmit()" #contactForm="ngForm"
+  action="mailto:marta.perez.95@gmail.com" method="post" enctype="text/plain">
+
+    <div class="form-group">
+      <label for="name">Nombre/Empresa</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" 
+      name="name" #spy #name="ngModel" placeholder="Nombre" >
+      <div [hidden]="name.valid || name.pristine || name.untouched" class="alert alert-danger">
+        Nombre es requerido
+      </div>
+    </div>
+    
+
+    <div class="form-group">
+      <label for="emial">Email</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="model.email" name="email" #email="ngModel">
+      <div [hidden]="email.valid || email.pristine || email.untouched" class="alert alert-danger">
+        Email es requerido
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="telefono">Telefono</label>
+      <input type="tel" class="form-control" id="telefono" required [(ngModel)]="model.telefone" name="telefone" #tel="ngModel">
+      <div [hidden]="tel.valid || tel.pristine || tel.untouched" class="alert alert-danger">
+        Telefono es requerido
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="asunto">Asunto</label>
+      <input type="text" class="form-control" id="asunto" required [(ngModel)]="model.asunto" name="asunto" #asunto="ngModel">
+      <div [hidden]="asunto.valid || asunto.pristine || asunto.untouched" class="alert alert-danger">
+        Asunto es requerido
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="mensaje">Mensaje</label>
+      <textarea type="text" class="form-control" id="mensaje" required [(ngModel)]="model.message" name="message" #message="ngModel">
+
+      </textarea>
+      <div [hidden]="message.valid || message.pristine || message.untouched" class="alert alert-danger">
+        Mensaje es requerido
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid" >Enviar</button>
+    <!-- no need to put the (click here because we already have it in the form onSubmit())-->
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h2>Has enviado lo siguiente:</h2>
+  <div class="row">
+    <div class="col-xs-3">Nombre</div>
+    <div class="col-xs-9">{{ model.name }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Email</div>
+    <div class="col-xs-9">{{ model.email }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Telefono</div>
+    <div class="col-xs-9">{{ model.telefone }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Asunto</div>
+    <div class="col-xs-9">{{ model.asunto }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Mensaje</div>
+    <div class="col-xs-9">{{ model.message }}</div>
+  </div>
+  <br>
+  <!--<button class="btn btn-primary" (click)="submitted=false">Edit</button>-->
+</div>

@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+  }
+.info{
+    display: flex;
+    background-color: white;
+    padding-left: 7px;
+}
+.estudios {
+	//float: left;
+	width: 75%;
+}
+h3{
+    font-family: "Times New Roman", Times, serif;
+	font-variant: small-caps;
+	color: green;
+	font-size: 3.5vw;
+}
+
+.estudios span{
+	font-weight:bold;
+	line-height:1.5em;
+	color:#000000;
+	font-size:20px;
+	font-family:courier new,courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
+}
+.estudios ul{
+	color:rgb(0, 0, 0); 
+	font-family:courier new,courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
+	font-size:20px;
+	text-align:justify;
+}
+.estudios li{
+	font-size:20px;
+	line-height:1.5em;
+}
+
+.card{
+	//float: right;
+	border: 1px solid #afcde3;
+	//height: 765px;
+	width: 25%;
+	background-color: #6666ff;
+	//margin-right: 70px;
+	margin-top: 15px;
+	//position: relative;
+}
+.card p{
+	margin-top: 15px;
+	margin-left: 11px;
+	font-weight:bold;
+	line-height:1.5em;
+	color:#000000;
+	font-size:20px;
+	font-family:courier new,courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
+}
+
+.card .personal-info {
+	padding-top: 7px;
+	margin: 11px;
+	font-size: 15px;
+}
+.card .personal-info .key{
+	color: #ff99bb;
+	font-weight: bold;
+	line-height: 1.7em;
+}
+.card .personal-info .value{
+	color: #FFFFFF;
+}
+.pequeña {
+	//padding-left: 35px;
+	//padding-bottom: 11px;
+    //position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.imgSobreMi {
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.varias{
+    width: 100%;
+}
+
+
+.buttons{
+    padding-top: 7px;
+    height: auto;
+    //background-color: orange;
+    display: grid;
+}
+button {
+	border: none;
+	background: #3a7999;
+	color: #f2f2f2;
+	margin: 11px;
+	font-size: 23px;
+	border-radius: 5px;
+	
+	box-sizing: border-box;
+	transition: all 500ms ease;
+}
+
+.flipped {
+	transform-style: preserve-3d;
+}
+.flipped:after {
+	top: -100%;
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	background: #3a9999;
+	border-radius: 5px;
+	content: "Divertida";
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+.flipped:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+
+.relleno {
+	float: right;
+	bottom: 0;
+}
+.relleno:hover {
+	background: rgba(0,0,0,0);
+	color: white;
+	box-shadow: inset 0 0 0 3px #ff99bb;
+}
+
+.water {
+    float: left;
+    position:relative;
+}
+.water:before{
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 35px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 2s ease;
+	width: 25%;
+}
+.water:hover:before {
+	width: 100%;
+}

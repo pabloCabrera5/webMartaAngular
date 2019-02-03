@@ -1,0 +1,92 @@
+.content{
+	background-color: white;
+}
+.title{
+	
+}
+.title h3{
+	color: #2eb82e;
+	font: normal normal bold 39px/1.4em Signika,sans-serif;
+}
+.subtitle p{
+	float: right;
+	padding-top: 20px;
+	padding-right: 30px;
+	font-family:sacramento,cursive;
+	color: #FF8282;
+	font-size: 23px;
+}
+
+.competencias{
+	display: flex;
+	
+}
+.competencia{
+	margin: 5px;
+	width: 33%;
+	/*border: 3px solid lightgreen;*/
+	height: auto;
+	background-color: lightyellow;
+}
+.competencia > h4 {
+	text-align: center;
+	font-size: 2vw;
+}
+
+.comp1{
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	background-color: lightgreen;
+}
+.comp1 ul li {
+	font-weight: bold;
+	line-height: 1.5em;
+	font: italic bold 14px/1.7em "Times New Roman", Times, serif;
+}
+
+.comp2{
+	/*border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;*/
+	background-color: lightskyblue;
+	/*border-radius: 50px;*/
+}
+
+
+.comp3{
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background-color: coral;
+}
+.comp3 > p{
+	margin: 0px 30px;
+	margin-top: 30px;
+	line-height: 1.9em;
+	font-family: "Times New Roman", Times, serif;
+	font-variant: small-caps;
+}
+.comp3 > p > a {
+	color: black;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /*/background-color: #2196F3;
+    */padding: 10px;
+  }
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1px;
+    font-size: 30px;
+    text-align: center;
+    width: 110px;
+    /*height: 150px;;*/
+}
+img{
+    width: 100%;
+}
