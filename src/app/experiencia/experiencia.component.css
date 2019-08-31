@@ -2,7 +2,7 @@
 	border: 1px solid #009900;
 	border-radius: 25px;
 	height: auto;
-	width: 95%;
+	width: 100%;
 	background-color: #009900;
 	padding: 10px;
 	margin: 10px;
@@ -67,4 +67,30 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+
+.experienciasubmenu {
+	/*display: grid;*/
+	/*border: 1px solid #009900;*/
+	height: auto;
+	width: auto;
+	background-color: rgb(224, 52, 255);
+	margin-bottom: 13px;
+	/*grid-template-columns: auto auto auto auto; *//* not usefull now i use bootstrap*/
+}
+.item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 15px;
+	text-align: center;
+  }
+
+@media screen and (max-width: 850px) {
+	.title {
+		font-size: 35px;
+	}
+	.experienciasubmenu {
+		display: grid;
+	}
 }

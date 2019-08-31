@@ -1,0 +1,84 @@
+
+  <div class="gallery">
+    <figure class="gallery__item gallery__item--1" *ngFor="let img of imagesSources; let i = index">
+      <img src={{img}} class="gallery__img" alt="Image {{i+1}}">
+    </figure>
+  </div>
+
+
+
+<!--          THIS WAS A TEST FOR AN IMAGE LIGHTBOX          -->
+<!--
+  
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="../../../assets/materiales/foto1.PNG" style="width:100%" (click)="openModal();currentSlide(1)"
+      class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../../../assets/materiales/foto2.PNG" style="width:100%" (click)="openModal();currentSlide(2)"
+      class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../../../assets/materiales/foto3.PNG" style="width:100%" (click)="openModal();currentSlide(3)"
+      class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../../../assets/materiales/foto4.PNG" style="width:100%" (click)="openModal();currentSlide(4)"
+      class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" (click)="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../../../assets/materiales/foto1.PNG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../../../assets/materiales/foto2.PNG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../../../assets/materiales/foto3.PNG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="../../../assets/materiales/foto4.PNG" style="width:100%">
+    </div>
+
+    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="../../../assets/materiales/foto1.PNG" style="width:100%" (click)="currentSlide(1)"
+        alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../../../assets/materiales/foto2.PNG" style="width:100%" (click)="currentSlide(2)"
+        alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../../../assets/materiales/foto3.PNG" style="width:100%" (click)="currentSlide(3)"
+        alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../../../assets/materiales/foto4.PNG" style="width:100%" (click)="currentSlide(4)"
+        alt="Northern Lights">
+    </div>
+  </div>
+</div>
+-->

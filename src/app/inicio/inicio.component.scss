@@ -15,21 +15,26 @@
     width: 40%;
 }
 #img{
-    width: 100%;    
+    width: 100%;
+    height: auto;
 }
 .pie-imagen{
     color: #FF1493;
-    font-size: 2.2vw;
+    font-size: 3.0vw;
     background-color:white;
 }
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 850px) {
     .img-M{
        // padding-left: 0px;
     }
     #img{
         width: 100%;
     }
+    .imgInicio{
+      height: auto;
+      width: 100%;
+  }
 }
 
 .mainbox{
@@ -43,9 +48,9 @@
     color: white;
     border: 1px solid #afcde3;
     padding: 5px;
-    width: 40%;
+    // width: 40%; // *
     height: auto;
-    margin-left: 3px;
+    // margin-left: 3px; // * if i set this then the bootstrap md doesnt work
     margin-top: 3px;
 }
 .boxes{

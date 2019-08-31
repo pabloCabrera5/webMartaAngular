@@ -1,6 +1,12 @@
+<div class="row">
+<div class="experienciasubmenu">
+      <div class="item col-sm-3 col-xs-12" *ngFor="let item of menuOptions">
+        <a [class.active]='activeOption === item.title' (click)="optionClicked(item.url)" routerLink='{{item.url}}'>{{item.title}}</a>
+      </div>
+</div></div>
+<router-outlet></router-outlet>
 
-
-<div class="content" >
+<div class="content" *ngIf="!child" >
 
     <div class="ticket">
       <div class="title">

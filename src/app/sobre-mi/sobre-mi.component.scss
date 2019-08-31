@@ -8,13 +8,31 @@
 }
 .estudios {
 	//float: left;
-	width: 75%;
+	// width: 75%; // not necessary cause right now i'm using bootrstrap
 }
 h3{
     font-family: "Times New Roman", Times, serif;
 	font-variant: small-caps;
 	color: green;
 	font-size: 3.5vw;
+}
+
+.row {
+	width: 100%;
+}
+@media screen and (max-width: 850px) {
+	.row {
+		width: auto;
+	}
+	h3 {
+		font-size: 5.5vw;
+	}
+    /*.card{
+        width: 100%;
+    }
+    .estudios{
+      width: 100%;
+  }*/
 }
 
 .estudios span{
@@ -35,11 +53,12 @@ h3{
 	line-height:1.5em;
 }
 
+
 .card{
 	//float: right;
 	border: 1px solid #afcde3;
 	//height: 765px;
-	width: 25%;
+	// width: 25%; // not necessary cause right now i'm using bootrstrap
 	background-color: #6666ff;
 	//margin-right: 70px;
 	margin-top: 15px;

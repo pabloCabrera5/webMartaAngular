@@ -6,7 +6,7 @@
 }
 .title h3{
 	color: #2eb82e;
-	font: normal normal bold 39px/1.4em Signika,sans-serif;
+	font: normal normal bold 37px/1.4em Signika,sans-serif;
 }
 .subtitle p{
 	float: right;
@@ -17,15 +17,20 @@
 	font-size: 23px;
 }
 
+.row {
+	width: 103%;
+	/*margin: 11px;*/
+}
+
 .competencias{
 	display: flex;
 	
 }
 .competencia{
-	margin: 5px;
-	width: 33%;
+	/*margin: 5px;
+	/*width: 33%;*/
 	/*border: 3px solid lightgreen;*/
-	height: auto;
+	height: 100%;
 	background-color: lightyellow;
 }
 .competencia > h4 {
@@ -89,4 +94,13 @@
 }
 img{
     width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+	.row {
+		margin: 1px;
+	}
+	.competencia{
+		height: auto;
+	}
 }

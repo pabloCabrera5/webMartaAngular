@@ -71,7 +71,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-
+//metodo para enviar el mail si nos hacen un post
 app.post('/', ((req, res) => {
     let mensaje = `${req.body.name} te ha enviado el siguiente mensaje 
         ${req.body.message}, su email es ${req.body.email}, 

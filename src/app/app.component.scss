@@ -40,8 +40,8 @@ address {
   //position: fixed;
   //top: 0;
   //width: 100%;
-  height: 60px;
-  display: flex; 
+  height: auto;
+  //display: flex; //commented because otherwise the burguer menu dont show well
   align-items:center; 
   justify-content:center;
 }
@@ -61,6 +61,7 @@ ul {
 li {
   float: left;
   min-height: 60px;
+  display: block;
 }
 
 li a {
@@ -79,29 +80,87 @@ li a:hover:not(.active) {
 .active {
   background-color: #4CAF50;
 }
+.contact{
+  float: right;
+  background:cornflowerblue
+}
 
 
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+.topnav .icon {
+  display: none;
+}
+//for responsive design 
+@media screen and (max-width: 850px) {
+  .topnav ul li:not(:first-child) {display: none;}
+  .topnav ul li.icon {
     float: right;
     display: block;
   }
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .topnav.responsive ul li {
     float: none;
     display: block;
     text-align: left;
   }
+  .subnav-content {
+    position: relative !important;
+  }
+  .subnav-content a {
+    float: none !important;
+  }
+}
+
+
+//css for the submenu
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(224, 52, 255);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  //background-color: #eee;
+  //color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
 }
 
 
@@ -113,8 +172,7 @@ li a:hover:not(.active) {
 
 
 
-
-
+/*
 @media (max-width: 800px) {
   .content1{
     //margin: 50px;
@@ -125,7 +183,7 @@ li a:hover:not(.active) {
 
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
 
-
+/*
 #menuToggle
 {
   display: block;  
@@ -150,15 +208,16 @@ li a:hover:not(.active) {
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0; // hide this 
+  z-index: 2; // and place it over the hamburger 
   
   -webkit-touch-callout: none;
 }
-
+*/
 /*
  * Just a quick hamburger
  */
+ /*
 #menuToggle span
 {
   display: block;
@@ -193,7 +252,7 @@ li a:hover:not(.active) {
 /* 
  * Transform all the slices of hamburger
  * into a crossmark.
- */
+ *//*
 #menuToggle input:checked ~ span
 {
   opacity: 1;
@@ -203,7 +262,7 @@ li a:hover:not(.active) {
 
 /*
  * But let's hide the middle one.
- */
+ *//*
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
@@ -212,7 +271,7 @@ li a:hover:not(.active) {
 
 /*
  * Ohyeah and the last one should go the other direction
- */
+ *//*
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
@@ -221,7 +280,7 @@ li a:hover:not(.active) {
 /*
  * Make this absolute positioned
  * at the top left of the screen
- */
+ *//*
 #menu
 {
   position: absolute;
@@ -233,7 +292,7 @@ li a:hover:not(.active) {
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+  // to stop flickering of text in safari 
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -254,4 +313,4 @@ li a:hover:not(.active) {
 {
   transform: none;
 }
-}
+//}

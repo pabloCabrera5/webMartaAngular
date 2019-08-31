@@ -22,7 +22,6 @@ img{
 .contentMontessori > p {
 	margin-top: 3px;
 	font-size: 1.5vw;
-
 }
 .contentMontessori > a {
 	margin-top: 3px;
@@ -84,4 +83,19 @@ img{
     font-family: din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
     color: #006C6D;
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 850px) {
+	.title > h3{
+		font-size: 2.0em;
+    }
+    .contentMontessori > h4{
+        font-size: 3.2vw;
+    }
+    .contentMontessori > a {
+        font-size: 2.5vw;
+    }
+    .contentMontessori > p {
+        font-size: 2.5vw;
+    }
 }
