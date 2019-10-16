@@ -1,0 +1,62 @@
+.row {
+    text-align: center;
+}
+
+.container-fluid{
+    margin-bottom: 11px;
+}
+.carousel-control{
+    background-image: none;
+    opacity: 1;
+    color:blue;
+    width: 13%;
+}
+.carousel-control.left {
+    left: -65px;
+}
+.carousel-control.right {
+    right: -60px;
+}
+
+.jimmy {
+    padding-top: 15px;
+    background-color: white;
+
+}
+.jimmy > span {
+    font-family:amatic sc,cursive;
+    color: #FFF200;
+    font-size: 37px;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-left: 10px;
+}
+.jimimages {
+    display: flex;
+    overflow: hidden;
+}
+
+.suzyLee {
+    text-align: center;
+    margin: 11px;
+}
+
+
+.slider{
+    width:400px;
+    margin:20px auto;
+    text-align: center;
+    padding:20px;
+    color:white;
+    .parent-slide{padding:15px;}
+    img{display: block;margin:auto;}
+  }
+
+@media screen and (max-width: 850px) {
+    .jimimages{
+        display: block;
+    }
+	/*#suzy{
+		width: 100%
+    }*/
+}

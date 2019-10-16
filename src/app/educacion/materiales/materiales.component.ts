@@ -8,21 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class MaterialesComponent implements OnInit {
 
   constructor() { }
-  
+  imagesSources = [];
   ngOnInit() {
+    for(let i=1; i<11; i++){
+      this.imagesSources.push(`../../../assets/materiales/foto${i}.PNG`);
+    }
   }
-  imagesSources = [
-    '../../../assets/materiales/foto1.PNG',
-    '../../../assets/materiales/foto2.PNG',
-    '../../../assets/materiales/foto3.PNG',
-    '../../../assets/materiales/foto4.PNG',
-    '../../../assets/materiales/foto5.PNG',
-    '../../../assets/materiales/foto6.PNG',
-    '../../../assets/materiales/foto7.PNG',
-    '../../../assets/materiales/foto8.PNG',
-    '../../../assets/materiales/foto9.PNG',
-    '../../../assets/materiales/foto10.PNG',
-  ]
 
 
 

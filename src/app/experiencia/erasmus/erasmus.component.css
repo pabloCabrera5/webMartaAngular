@@ -1,0 +1,18 @@
+
+.noruega{
+    text-align: center;
+}
+.noruega > p {
+    background-color: #5F9ABF;
+    text-shadow: #ffffff 0px 0px 6px;
+    font-family: amatic sc,cursive;
+    color: #FFC0C0;
+    font-size: 68px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+
+.experience > p {
+    background-color: white;
+}

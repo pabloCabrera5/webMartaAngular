@@ -111,6 +111,7 @@ li a:hover:not(.active) {
   }
   .subnav-content {
     position: relative !important;
+    display: block !important // for submenu of educacion be display in mobile mode
   }
   .subnav-content a {
     float: none !important;

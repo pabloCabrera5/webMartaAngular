@@ -1,6 +1,7 @@
 {
-  "name": "martas-web",
+  "name": "martasprofessor-web",
   "version": "0.0.0",
+  "author": "Pablo Cabrera Pérez",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
